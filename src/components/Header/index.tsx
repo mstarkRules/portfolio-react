@@ -1,5 +1,6 @@
 import { Container, Content } from "./styles";
 
+import { PerfilImg } from "../PerfilImg";
 import wallpaper from "../../assets/wallpaper.jpg";
 
 export function Header() {
@@ -7,6 +8,7 @@ export function Header() {
     <Container>
       <Content>
         <img src={wallpaper} alt="" />
+        <PerfilImg />
       </Content>
     </Container>
   );
