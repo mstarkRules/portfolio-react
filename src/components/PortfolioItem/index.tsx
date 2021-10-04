@@ -16,7 +16,7 @@ export function PortfolioItem({
     <Container>
       <h1>{title}</h1>
       <img src={img} alt="Imagem do projeto" />
-      <p>{description}</p>
+      <p>Do que se trata? {description}</p>
     </Container>
   );
 }
