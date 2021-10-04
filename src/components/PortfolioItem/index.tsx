@@ -1,3 +1,5 @@
+import { Container } from "./styles";
+
 interface PortifolioItemProps {
   title: string;
   img: string;
@@ -9,10 +11,12 @@ export function PortfolioItem({
   img,
   description,
 }: PortifolioItemProps) {
+  const imagem = "/imgs/example-img.jpg";
   return (
-    <div>
+    <Container>
       <h1>{title}</h1>
       <img src={img} alt="Imagem do projeto" />
-    </div>
+      <p>{description}</p>
+    </Container>
   );
 }

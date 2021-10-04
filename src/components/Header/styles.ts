@@ -7,9 +7,8 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-left: 10px;
   padding-right: 10px;
-
+  padding-left: 10px;
   img {
     object-fit: cover;
     width: 100%;

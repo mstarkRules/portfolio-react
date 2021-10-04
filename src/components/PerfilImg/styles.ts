@@ -7,5 +7,11 @@ export const Container = styled.div`
   img {
     border-radius: 8.5rem;
     border: 0.3rem solid var(--background);
+    transform: scale(1);
+
+    transition: all ease 0.3s;
+    :hover {
+      transform: scale(1.1);
+    }
   }
 `;

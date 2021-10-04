@@ -7,7 +7,7 @@ export function App() {
     <>
       <div className="App">
         <Header />
-        <h2>Meu Portfólio</h2>
+
         <Content />
       </div>
       <GlobalStyle />
