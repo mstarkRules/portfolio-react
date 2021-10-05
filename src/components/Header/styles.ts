@@ -5,7 +5,6 @@ export const Container = styled.header`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #111;
 `;
 
 export const Content = styled.div`

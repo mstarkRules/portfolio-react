@@ -7,7 +7,7 @@ export function ProjectsSection() {
 
   return (
     <Container>
-      <h2>Projetos</h2>
+      <h2>Marcos Paulo Amorim</h2>
       <Conteudo>
         {lista.map((item) => {
           return (
