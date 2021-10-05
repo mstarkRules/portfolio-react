@@ -2,7 +2,7 @@ import { PortfolioItem } from "../PortfolioItem";
 import { Container, Conteudo } from "./styles";
 import { PortfolioList } from "../../data/listPortfolio";
 
-export function Content() {
+export function ProjectsSection() {
   const lista = PortfolioList;
 
   return (
