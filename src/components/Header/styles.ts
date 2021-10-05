@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.header``;
+export const Container = styled.header`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #111;
+`;
 
 export const Content = styled.div`
+  min-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;

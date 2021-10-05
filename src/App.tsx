@@ -6,11 +6,10 @@ import { TopButton } from "./components/TopButton";
 export function App() {
   return (
     <>
-      <div className="App">
-        <Header />
+      <Header />
 
-        <ProjectsSection />
-      </div>
+      <ProjectsSection />
+
       <GlobalStyle />
     </>
   );
