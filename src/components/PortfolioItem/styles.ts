@@ -1,17 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    max-width: 400px;
+  a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    
-    
+    align-items: flex-end;
+    padding-bottom: 10px;
     background-color: #888;
 
-    img{
-      max-height: 200px;
-      object-fit: cover;
+    width: 22rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+    transition: all ease 0.2s;
+
+    color: #fff;
+
+    :hover {
+      transform: scale(1.05);
+      transform: rotateZ(-1deg);
     }
   }
 `;

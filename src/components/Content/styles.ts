@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-color: #ccc;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +13,23 @@ export const Container = styled.section`
 `;
 
 export const Conteudo = styled.div`
+  max-width: 1140px;
+  gap: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-right: 10px;
   padding-left: 10px;
+
+  @media (max-width: 580px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 980px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 1140px) {
+    justify-content: center;
+  }
 `;

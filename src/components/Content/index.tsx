@@ -15,6 +15,7 @@ export function Content() {
               title={item.title}
               img={item.img}
               description={item.description}
+              link={item.link}
             />
           );
         })}
