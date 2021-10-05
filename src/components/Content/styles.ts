@@ -9,6 +9,7 @@ export const Container = styled.section`
   padding-bottom: 100px;
 
   h2 {
+    padding: 10px;
   }
 `;
 
