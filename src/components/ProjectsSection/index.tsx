@@ -7,11 +7,11 @@ export function ProjectsSection() {
 
   return (
     <Container>
-      <h2>Marcos Paulo Amorim</h2>
       <Conteudo>
         {lista.map((item) => {
           return (
             <PortfolioItem
+              key={item.id}
               title={item.title}
               img={item.img}
               description={item.description}

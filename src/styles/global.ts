@@ -3,6 +3,10 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root{
         --background: #f0f2f5;
+        --background-dark: rgb(21, 32, 43);
+        --title-dark: #fff;
+        --text-dark: #fff;
+;        
     }
     *{
         margin: 0;
