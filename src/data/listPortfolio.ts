@@ -34,7 +34,7 @@ export const PortfolioList = [
   {
     id: 5,
     title: "Projeto Rocketshoes",
-    img: "/imgs/rocketshoes-home.png",
+    img: "/imgs/rocketshoes.png",
     link: "https://github.com/mstarkRules/ignite-chapter2-challenge-hook-scart",
     description:
       "Projeto de uma listagem de itens de uma loja de sapatos. Permite inserir e remover itens do carrinho. Projeto feito seguindo a trilha de ReactJS, do Ignite.",
