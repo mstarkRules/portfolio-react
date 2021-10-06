@@ -4,6 +4,7 @@ import { GlobalStyle } from "./styles/global";
 import { TopButton } from "./components/TopButton";
 import { ThemeContextProvider } from "./Contexts/ThemeContext";
 import { PerfilSection } from "./components/PerfilSection";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
         <Header />
         <PerfilSection />
         <ProjectsSection />
+        <Footer />
 
         <GlobalStyle />
       </>
