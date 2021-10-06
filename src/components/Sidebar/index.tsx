@@ -17,7 +17,7 @@ export function Sidebar() {
       <SocialItem
         type="whatsapp"
         icon="BsWhatsapp"
-        link="https://api.whatsapp.com/send?phone=09391653757"
+        link="https://api.whatsapp.com/send?phone=+559391653757"
       />
     </Container>
   );
