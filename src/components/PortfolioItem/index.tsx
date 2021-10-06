@@ -13,9 +13,9 @@ export function PortfolioItem({
   description,
   link,
 }: PortifolioItemProps) {
-  const imagem = "/imgs/example-img.jpg";
+  console.log("imagem: ", img);
   return (
-    <Container>
+    <Container img={img}>
       <a href={link} target="_blank">
         <div>{title}</div>
       </a>

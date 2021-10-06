@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+  img: string;
+}
+
+export const Container = styled.div<ContainerProps>`
   a {
     div {
       background-color: #111;
@@ -20,7 +24,7 @@ export const Container = styled.div`
 
       color: transparent;
       box-shadow: 0px 5px 20 0px #d2d2d27d;
-      background-image: url(imgs/example-img.jpg);
+      background-image: url(${(props) => props.img});
       background-size: cover;
       :hover {
         transform: scale(1.05);
