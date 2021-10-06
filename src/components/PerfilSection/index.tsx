@@ -5,7 +5,7 @@ export function PerfilSection() {
   return (
     <Container>
       <h1>Marcos Paulo Amorim</h1>
-      <p>Desenvolvedor Front-end</p>
+      <p>Desenvolvedor Front-end - ReactJS</p>
       <strong>
         <ImLocation /> Curitiba - PR
       </strong>
