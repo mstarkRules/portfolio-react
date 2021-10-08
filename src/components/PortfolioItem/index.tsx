@@ -18,7 +18,7 @@ export function PortfolioItem({
     <Container img={img}>
       <a href={link} target="_blank">
         <div>
-          <strong>{title}</strong>
+          <strong>{title}</strong>{" "}
         </div>
       </a>
     </Container>

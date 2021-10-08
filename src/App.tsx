@@ -5,13 +5,18 @@ import { TopButton } from "./components/TopButton";
 import { ThemeContextProvider } from "./Contexts/ThemeContext";
 import { PerfilSection } from "./components/PerfilSection";
 import { Footer } from "./components/Footer";
+import { HomeContainer } from "./components/HomeContainer";
+import { ReactNode } from "react";
 
 export function App() {
   return (
     <ThemeContextProvider>
       <>
-        <Header />
-        <PerfilSection />
+        <div style={{ height: "100%" }}>
+          <Header />
+          <PerfilSection />
+        </div>
+
         <ProjectsSection />
         <Footer />
 
