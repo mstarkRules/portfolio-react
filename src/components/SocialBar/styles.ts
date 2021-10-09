@@ -5,5 +5,4 @@ export const Container = styled.div`
   flex-direction: row;
 
   padding: 0.9rem;
-  background-color: #ccc;
 `;
