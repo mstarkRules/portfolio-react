@@ -1,6 +1,7 @@
 import { SocialItem } from "../SocialItem";
 import { Container } from "./styles";
 import { ImLocation } from "react-icons/im";
+import { SocialBar } from "../SocialBar";
 export function PerfilSection() {
   return (
     <Container>
@@ -9,6 +10,8 @@ export function PerfilSection() {
       <strong>
         <ImLocation /> Curitiba - PR
       </strong>
+
+      <SocialBar />
     </Container>
   );
 }

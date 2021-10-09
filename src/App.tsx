@@ -12,7 +12,7 @@ export function App() {
   return (
     <ThemeContextProvider>
       <>
-        <div style={{ height: "100%" }}>
+        <div style={{ height: "100vh" }}>
           <Header />
           <PerfilSection />
         </div>

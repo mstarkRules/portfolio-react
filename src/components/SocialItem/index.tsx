@@ -4,8 +4,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 interface SocialItemProps {
-  icon: string;
-  type: string;
+  icon: "BsLinkedin" | "BsWhatsapp" | "BsGithub";
+  type: "linkedin" | "whatsapp" | "github";
   link: string;
 }
 
