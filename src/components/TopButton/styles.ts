@@ -7,7 +7,7 @@ interface ButtonProps {
 export const Button = styled.div<ButtonProps>`
   display: ${(props) => props.visible};
   font-size: 3.5rem;
-  color: #363636;
+  color: #007bb6;
   position: fixed;
   bottom: 20px;
   right: 20px;

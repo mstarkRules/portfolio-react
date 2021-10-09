@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "./style";
 
 export function WelcomeText() {
@@ -27,8 +27,12 @@ export function WelcomeText() {
     }
   }
 
+  useEffect(() => {
+    animateText();
+  }, []);
+
   return (
-    <Container onClick={animateText}>
+    <Container onClick={animateText} onMouseOver={animateText}>
       <strong>{text}</strong>
     </Container>
   );
