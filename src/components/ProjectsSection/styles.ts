@@ -6,8 +6,6 @@ export const Container = styled.section`
   align-items: center;
   flex-direction: column;
 
-  background-color: #222;
-
   padding-bottom: 100px;
 
   h2 {

@@ -6,11 +6,17 @@ interface ButtonProps {
 
 export const Button = styled.div<ButtonProps>`
   display: ${(props) => props.visible};
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 1.875rem;
+  font-size: 3.5rem;
+  color: #363636;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 99;
+
+  transition: all ease 0.2s;
+
+  :hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 `;
