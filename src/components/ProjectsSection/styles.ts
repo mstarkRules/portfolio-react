@@ -8,16 +8,18 @@ export const Container = styled.section`
 
   padding-bottom: 100px;
 
-  h2 {
-    padding: 10px;
+  h1 {
+    padding: 30px;
   }
 `;
 
 export const Conteudo = styled.div`
   max-width: 1140px;
+
   gap: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding-right: 10px;
   padding-left: 10px;
