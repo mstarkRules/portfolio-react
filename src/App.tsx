@@ -20,6 +20,8 @@ export function App() {
         <ProjectsSection />
         <Footer />
 
+        <TopButton />
+
         <GlobalStyle />
       </>
     </ThemeContextProvider>

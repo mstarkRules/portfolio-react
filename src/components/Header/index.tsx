@@ -10,7 +10,6 @@ export function Header() {
   console.log("temaa: ", theme);
   return (
     <Container>
-      <Sidebar />
       <Content>
         <img src={wallpaper} alt="" />
         <PerfilImg />
