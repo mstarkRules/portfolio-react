@@ -3,11 +3,11 @@ import { Container, Content } from "./styles";
 import { PerfilImg } from "../PerfilImg";
 import wallpaper from "../../assets/wallpaper.jpg";
 import { Sidebar } from "../Sidebar";
-import { useTheme } from "../../Hooks/useTheme";
+import { useTheme } from "../../hooks/useTheme";
 
 export function Header() {
-  const { theme, toggleTheme } = useTheme();
-  console.log("temaa: ", theme);
+  // const { theme, toggleTheme } = useTheme();
+  // console.log("temaa: ", theme);
   return (
     <Container>
       <Content>

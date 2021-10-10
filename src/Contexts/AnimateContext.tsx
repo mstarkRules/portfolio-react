@@ -1,15 +1,23 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface AnimateProviderProps {
   children: ReactNode;
 }
 
 interface AnimateContextData {
+  text: string;
+  secondText: string;
   animateText: () => void;
   piscarTexto: () => void;
 }
 
-const AnimateContext = createContext<AnimateContextData>(
+export const AnimateContext = createContext<AnimateContextData>(
   {} as AnimateContextData
 );
 
@@ -17,16 +25,15 @@ export function AnimateProvider({
   children,
 }: AnimateProviderProps): JSX.Element {
   const [clicou, setClicou] = useState(0);
-  const [text, setText] = useState("Bem vindo");
+  const [text, setText] = useState("Bem vind@ ao meu Portfólio");
   const [secondText, setSecondText] = useState("white");
 
-  function animateText() {
+  const animateText = () => {
     let arrayText = text.split("");
-
     let texto = "";
+
     if (clicou === 0) {
       setClicou(1);
-
       for (let i = 0; i < arrayText.length; i++) {
         (function (i) {
           setTimeout(function () {
@@ -41,7 +48,11 @@ export function AnimateProvider({
       }
       piscarTexto();
     }
-  }
+  };
+
+  useEffect(() => {
+    animateText();
+  }, []);
 
   function piscarTexto() {
     let textos = ["", "_"];
@@ -58,14 +69,10 @@ export function AnimateProvider({
   }
 
   return (
-    <AnimateContext.Provider value={{ animateText, piscarTexto }}>
+    <AnimateContext.Provider
+      value={{ text, secondText, animateText, piscarTexto }}
+    >
       {children}
     </AnimateContext.Provider>
   );
-}
-
-export function useAnimate(): AnimateContextData {
-  const context = useContext(AnimateContext);
-
-  return context;
 }

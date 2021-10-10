@@ -2,7 +2,7 @@ import { SocialItem } from "../SocialItem";
 import { Container } from "./styles";
 import { ImLocation } from "react-icons/im";
 import { SocialBar } from "../SocialBar";
-import { WelcomeText } from "../WelcomeText";
+import WelcomeText from "../WelcomeText";
 export function PerfilSection() {
   return (
     <Container>
