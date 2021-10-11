@@ -12,9 +12,9 @@ interface AnimateProviderProps {
 
 interface AnimateContextData {
   text: string;
-  secondText: string;
+  visibleColor: string;
   animateText: () => void;
-  piscarTexto: () => void;
+  alternateText: () => void;
 }
 
 export const AnimateContext = createContext<AnimateContextData>(
@@ -26,7 +26,7 @@ export function AnimateProvider({
 }: AnimateProviderProps): JSX.Element {
   const [clicou, setClicou] = useState(0);
   const [text, setText] = useState("Bem vind@ ao meu Portfólio");
-  const [secondText, setSecondText] = useState("white");
+  const [visibleColor, setVisibleColor] = useState("white");
 
   const animateText = () => {
     let arrayText = text.split("");
@@ -46,7 +46,7 @@ export function AnimateProvider({
           }, 100 * i);
         })(i);
       }
-      piscarTexto();
+      alternateText();
     }
   };
 
@@ -54,14 +54,14 @@ export function AnimateProvider({
     animateText();
   }, []);
 
-  function piscarTexto() {
+  function alternateText() {
     let textos = ["", "_"];
     let texto = "";
     function change() {
-      if (secondText === "transparent") {
-        setSecondText("white");
-      } else if (secondText === "white") {
-        setSecondText("transparent");
+      if (visibleColor === "transparent") {
+        setVisibleColor("white");
+      } else if (visibleColor === "white") {
+        setVisibleColor("transparent");
       }
     }
 
@@ -70,7 +70,7 @@ export function AnimateProvider({
 
   return (
     <AnimateContext.Provider
-      value={{ text, secondText, animateText, piscarTexto }}
+      value={{ text, visibleColor, animateText, alternateText }}
     >
       {children}
     </AnimateContext.Provider>
