@@ -4,13 +4,16 @@ import { useTheme } from "../../hooks/useTheme";
 import { Container } from "./style";
 
 const WelcomeText = (): JSX.Element => {
-  const { text, animateText, visibleColor } = useAnimate();
-  const { theme } = useTheme();
+  const [displayText, setDisplayText] = useState("Bem vind@ ao meu Portfólio");
 
-  const [clicou, setClicou] = useState(0);
+  const { text, readyClick, animateText, visibleColor } = useAnimate();
+
+  useEffect(() => {
+    handleAnimateText();
+  }, []);
 
   function handleAnimateText() {
-    animateText();
+    animateText(displayText);
   }
 
   return (

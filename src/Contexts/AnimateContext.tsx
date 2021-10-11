@@ -12,8 +12,9 @@ interface AnimateProviderProps {
 
 interface AnimateContextData {
   text: string;
+  readyClick: Boolean;
   visibleColor: string;
-  animateText: () => void;
+  animateText: (displayText: string) => void;
   alternateText: () => void;
 }
 
@@ -24,35 +25,41 @@ export const AnimateContext = createContext<AnimateContextData>(
 export function AnimateProvider({
   children,
 }: AnimateProviderProps): JSX.Element {
-  const [clicou, setClicou] = useState(0);
-  const [text, setText] = useState("Bem vind@ ao meu Portfólio");
+  const [readyClick, setReadyClick] = useState(true);
+
+  const [text, setText] = useState(String);
   const [visibleColor, setVisibleColor] = useState("white");
 
-  const animateText = () => {
-    let arrayText = text.split("");
-    let texto = "";
-
-    if (clicou === 0) {
-      setClicou(1);
-      for (let i = 0; i < arrayText.length; i++) {
-        (function (i) {
-          setTimeout(function () {
-            texto += arrayText[i];
-            setText(texto);
-            if (i === arrayText.length - 1) {
-              setClicou(0);
-              console.log(clicou);
-            }
-          }, 100 * i);
-        })(i);
-      }
-      alternateText();
+  const animateText = (displayText: string) => {
+    if (readyClick) {
+      handleAnimateText(displayText);
     }
   };
 
+  const handleAnimateText = (displayText: string) => {
+    setText(displayText);
+
+    let arrayText = displayText.split("");
+    let texto = "";
+    setReadyClick(false);
+
+    for (let i = 0; i < arrayText.length; i++) {
+      (function (i) {
+        setTimeout(function () {
+          texto += arrayText[i];
+          setText(texto);
+          if (i === arrayText.length - 1) {
+            setReadyClick(true);
+          }
+        }, 100 * i);
+      })(i);
+    }
+    alternateText();
+  };
+
   useEffect(() => {
-    animateText();
-  }, []);
+    console.log("estamos prontos? ", readyClick);
+  }, [readyClick]);
 
   function alternateText() {
     let textos = ["", "_"];
@@ -70,7 +77,7 @@ export function AnimateProvider({
 
   return (
     <AnimateContext.Provider
-      value={{ text, visibleColor, animateText, alternateText }}
+      value={{ text, readyClick, visibleColor, animateText, alternateText }}
     >
       {children}
     </AnimateContext.Provider>
