@@ -10,11 +10,17 @@ interface AnimateProviderProps {
   children: ReactNode;
 }
 
+interface dataText {
+  displayText: string;
+  type: string;
+}
+
 interface AnimateContextData {
-  text: string;
+  welComeText: string;
+  projectText: string;
   readyClick: Boolean;
   visibleColor: string;
-  animateText: (displayText: string) => void;
+  animateText: (dataText: dataText) => void;
   alternateText: () => void;
 }
 
@@ -27,19 +33,26 @@ export function AnimateProvider({
 }: AnimateProviderProps): JSX.Element {
   const [readyClick, setReadyClick] = useState(true);
 
-  const [text, setText] = useState(String);
+  const [welComeText, setWelcomeText] = useState(String);
+  const [projectText, setProjectText] = useState(String);
+
   const [visibleColor, setVisibleColor] = useState("white");
 
-  const animateText = (displayText: string) => {
+  const animateText = (obj: dataText) => {
     if (readyClick) {
-      handleAnimateText(displayText);
+      handleAnimateText(obj);
+      console.log(obj.type);
     }
   };
 
-  const handleAnimateText = (displayText: string) => {
-    setText(displayText);
+  const handleAnimateText = (obj: dataText) => {
+    if (obj.type === "welcome") {
+      setWelcomeText(obj.displayText);
+    } else if (obj.type === "project") {
+      setProjectText(obj.displayText);
+    }
 
-    let arrayText = displayText.split("");
+    let arrayText = obj.displayText.split("");
     let texto = "";
     setReadyClick(false);
 
@@ -47,7 +60,11 @@ export function AnimateProvider({
       (function (i) {
         setTimeout(function () {
           texto += arrayText[i];
-          setText(texto);
+          if (obj.type === "welcome") {
+            setWelcomeText(texto);
+          } else if (obj.type === "project") {
+            setProjectText(texto);
+          }
           if (i === arrayText.length - 1) {
             setReadyClick(true);
           }
@@ -77,7 +94,14 @@ export function AnimateProvider({
 
   return (
     <AnimateContext.Provider
-      value={{ text, readyClick, visibleColor, animateText, alternateText }}
+      value={{
+        welComeText,
+        readyClick,
+        visibleColor,
+        animateText,
+        alternateText,
+        projectText,
+      }}
     >
       {children}
     </AnimateContext.Provider>

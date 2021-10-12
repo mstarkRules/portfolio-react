@@ -6,14 +6,17 @@ import { Container } from "./style";
 const WelcomeText = (): JSX.Element => {
   const [displayText, setDisplayText] = useState("Bem vind@ ao meu Portfólio");
 
-  const { text, readyClick, animateText, visibleColor } = useAnimate();
-
+  const { welComeText, readyClick, animateText, visibleColor } = useAnimate();
   useEffect(() => {
     handleAnimateText();
   }, []);
 
   function handleAnimateText() {
-    animateText(displayText);
+    let obj = {
+      displayText: displayText,
+      type: "welcome",
+    };
+    animateText(obj);
   }
 
   return (
@@ -22,7 +25,7 @@ const WelcomeText = (): JSX.Element => {
       onMouseOver={handleAnimateText}
       display={visibleColor}
     >
-      <strong>{text}</strong>
+      <strong>{welComeText}</strong>
       <strong className="second">_</strong>
     </Container>
   );

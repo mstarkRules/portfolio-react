@@ -2,18 +2,29 @@ import PortfolioItem from "../PortfolioItem";
 import { Container, Conteudo } from "./styles";
 import { PortfolioList } from "../../data/listPortfolio";
 import { useAnimate } from "../../hooks/useAnimate";
+import { useEffect, useState } from "react";
 
 export function ProjectsSection() {
-  const { animateText, text } = useAnimate();
+  const [displayText, setDisplayText] = useState("Meus Projetos");
+  const { animateText, projectText } = useAnimate();
 
   const lista = PortfolioList;
+
+  useEffect(() => {
+    handleAnimateText();
+  }, []);
+
   function handleAnimateText() {
-    animateText("Meus projetos");
+    let obj = {
+      displayText,
+      type: "project",
+    };
+    animateText(obj);
   }
 
   return (
     <Container>
-      <h1>Meus Projetos</h1>
+      <h1 onClick={handleAnimateText}>{projectText}</h1>
       <Conteudo>
         {lista.map((item) => {
           return (
