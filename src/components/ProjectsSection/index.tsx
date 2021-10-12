@@ -1,4 +1,4 @@
-import { PortfolioItem } from "../PortfolioItem";
+import PortfolioItem from "../PortfolioItem";
 import { Container, Conteudo } from "./styles";
 import { PortfolioList } from "../../data/listPortfolio";
 import { useAnimate } from "../../hooks/useAnimate";

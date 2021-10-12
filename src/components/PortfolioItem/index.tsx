@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+import { memo } from "react";
 
 interface PortifolioItemProps {
   title: string;
@@ -7,12 +8,7 @@ interface PortifolioItemProps {
   link: string;
 }
 
-export function PortfolioItem({
-  title,
-  img,
-  description,
-  link,
-}: PortifolioItemProps) {
+function PortfolioItem({ title, img, description, link }: PortifolioItemProps) {
   console.log("imagem: ", img);
   return (
     <Container img={img}>
@@ -24,3 +20,5 @@ export function PortfolioItem({
     </Container>
   );
 }
+
+export default memo(PortfolioItem);
