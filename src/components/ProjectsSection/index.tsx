@@ -5,7 +5,7 @@ import { useAnimate } from "../../hooks/useAnimate";
 import { useEffect, useState } from "react";
 
 export function ProjectsSection() {
-  const [displayText, setDisplayText] = useState("Meus Projetos");
+  const [displayText, setDisplayText] = useState("Meus Projetos...");
   const { animateText, projectText } = useAnimate();
 
   const lista = PortfolioList;
