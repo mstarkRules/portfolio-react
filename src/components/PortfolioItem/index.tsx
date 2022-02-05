@@ -6,12 +6,19 @@ interface PortifolioItemProps {
   img: string;
   description: string;
   link: string;
+  setIsOpen: () => void;
 }
 
-function PortfolioItem({ title, img, description, link }: PortifolioItemProps) {
+function PortfolioItem({
+  title,
+  img,
+  description,
+  link,
+  setIsOpen,
+}: PortifolioItemProps) {
   console.log("imagem: ", img);
   return (
-    <Container img={img}>
+    <Container img={img} onClick={setIsOpen}>
       <a href={link} target="_blank">
         <div>
           <strong>{title}</strong>{" "}

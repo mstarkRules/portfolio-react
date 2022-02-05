@@ -3,9 +3,11 @@ import { Container, Conteudo } from "./styles";
 import { PortfolioList } from "../../data/listPortfolio";
 import { useAnimate } from "../../hooks/useAnimate";
 import { useEffect, useState } from "react";
+import Modal from "../Modal";
 
 export function ProjectsSection() {
   const [displayText, setDisplayText] = useState("Meus Projetos");
+  const [modalOpen, setModalOpen] = useState(false);
   const { animateText, projectText } = useAnimate();
 
   const lista = PortfolioList;
@@ -13,6 +15,10 @@ export function ProjectsSection() {
   useEffect(() => {
     handleAnimateText();
   }, []);
+
+  function toggleModal() {
+    setModalOpen(!modalOpen);
+  }
 
   function handleAnimateText() {
     let obj = {
@@ -34,10 +40,14 @@ export function ProjectsSection() {
               img={item.img}
               description={item.description}
               link={item.link}
+              setIsOpen={toggleModal}
             />
           );
         })}
       </Conteudo>
+      <Modal isOpen={modalOpen} setIsOpen={() => toggleModal()}>
+        Olaa
+      </Modal>
     </Container>
   );
 }
