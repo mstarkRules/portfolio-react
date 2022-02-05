@@ -7,7 +7,10 @@ import { AnimateProvider } from "./contexts/AnimateContext";
 import { PerfilSection } from "./components/PerfilSection";
 import { Footer } from "./components/Footer";
 import { HomeContainer } from "./components/HomeContainer";
-import { ReactNode } from "react";
+
+import Modal from "./components/Modal";
+
+function setIsOpen() {}
 
 export function App() {
   return (
@@ -28,6 +31,10 @@ export function App() {
           <Footer />
 
           <TopButton />
+
+          <Modal isOpen={false} setIsOpen={() => setIsOpen()}>
+            Olaa
+          </Modal>
 
           <GlobalStyle />
         </>
