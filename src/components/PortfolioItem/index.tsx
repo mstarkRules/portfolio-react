@@ -1,5 +1,6 @@
 import { Container } from "./styles";
-import { memo } from "react";
+import { memo, useState } from "react";
+import Modal from "../Modal";
 
 interface PortifolioItemProps {
   title: string;
@@ -16,6 +17,10 @@ function PortfolioItem({
   link,
   setIsOpen,
 }: PortifolioItemProps) {
+  const [modalOpen, setModalOpen] = useState(false);
+  function toggleModal() {
+    setModalOpen(!modalOpen);
+  }
   console.log("imagem: ", img);
   return (
     <Container img={img} onClick={setIsOpen}>
@@ -24,6 +29,9 @@ function PortfolioItem({
           <strong>{title}</strong>{" "}
         </div>
       </a>
+      <Modal isOpen={modalOpen} setIsOpen={() => toggleModal()}>
+        alo
+      </Modal>
     </Container>
   );
 }
