@@ -18,6 +18,7 @@ export function Modal(props: ModalProps) {
     setModalStatus(props.isOpen);
   }, [isOpen]);
 
+  console.log("estou aberto? ", modalStatus);
   return (
     <ReactModal
       shouldCloseOnOverlayClick={!false}
@@ -35,7 +36,7 @@ export function Modal(props: ModalProps) {
           background: "#f0f0f5",
           color: "#000",
           borderRadius: "8px",
-          width: "736px",
+          maxWidth: "35rem",
           border: "none",
         },
         overlay: {

@@ -3,6 +3,7 @@ import { Container, Conteudo } from "./styles";
 import { PortfolioList } from "../../data/listPortfolio";
 import { useAnimate } from "../../hooks/useAnimate";
 import { useEffect, useState } from "react";
+import Modal from "../Modal";
 
 export function ProjectsSection() {
   const [displayText, setDisplayText] = useState("Meus Projetos");
@@ -40,6 +41,7 @@ export function ProjectsSection() {
               description={item.description}
               link={item.link}
               setIsOpen={toggleModal}
+              listImgs={item.listImgs}
             />
           );
         })}
