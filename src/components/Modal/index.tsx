@@ -25,6 +25,8 @@ export function Modal(props: ModalProps) {
       onRequestClose={props.setIsOpen}
       isOpen={modalStatus}
       ariaHideApp={false}
+      //   preventScroll={true}
+      //   shouldFocusAfterRender={true}
       style={{
         content: {
           top: "50%",
@@ -36,7 +38,8 @@ export function Modal(props: ModalProps) {
           background: "#f0f0f5",
           color: "#000",
           borderRadius: "8px",
-          maxWidth: "35rem",
+          maxWidth: "80rem",
+          //   maxHeight: "80rem",
           border: "none",
         },
         overlay: {
