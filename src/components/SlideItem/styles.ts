@@ -3,39 +3,17 @@ import styled from "styled-components";
 export const Container = styled.a`
   width: 100%;
   display: block;
-  h2 {
-    color: black;
-  }
 
   img {
     margin: 0;
-    width: 920px;
-    height: 600px;
+    padding: 1rem;
+    width: 100%;
+    max-height: 600px;
 
-    object-fit: contain;
-  }
+    object-fit: cover;
 
-  @media (max-width: 960px) {
-    img {
-      width: 760px;
-      height: 500px;
-    }
-  }
-  @media (max-width: 720px) {
-    img {
-      width: 600px;
-      height: 400px;
-    }
-  }
-  @media (max-width: 600px) {
-    img {
-      width: 480px;
-      height: 300px;
-    }
-  }
-  @media (max-width: 540px) {
-    img {
-      width: 100%;
+    @media (max-width: 540px) {
+      padding: 0;
     }
   }
 `;

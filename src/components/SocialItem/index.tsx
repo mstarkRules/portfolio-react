@@ -7,7 +7,7 @@ interface SocialItemProps {
   icon: "BsLinkedin" | "BsWhatsapp" | "BsGithub";
   type: "linkedin" | "whatsapp" | "github";
   link: string;
-  size: "medium" | "large";
+  size: "medium" | "large" | "small";
 }
 
 export function SocialItem({ icon, type, link, size }: SocialItemProps) {

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface ContainerProps {
   type: string;
-  size: "medium" | "large";
+  size: "medium" | "large" | "small";
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -18,7 +18,22 @@ export const Container = styled.div<ContainerProps>`
 
   h1 {
     color: #363636;
-    font-size: ${(props) => (props.size === "medium" ? "2rem" : "3rem")};
+    font-size: ${(props) => {
+      switch (props.size) {
+        case "small":
+          return "1rem";
+          break;
+        case "medium":
+          return "2rem";
+          break;
+        case "large":
+          return "3rem";
+          break;
+        default:
+          return "1rem";
+          break;
+      }
+    }};
     transition: all ease 0.2s;
 
     :hover {

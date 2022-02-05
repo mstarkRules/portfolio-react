@@ -15,11 +15,11 @@ export const PortfolioList = [
   {
     id: 2,
     title: "Projeto Go-restaurant - Ignite",
-    img: "/imgs/go-restaurant-home.png",
+    img: "/imgs/go-restaurant.png",
     listImgs: [
-      { id: 1, item: "/imgs/go-restaurant-home.png" },
-      { id: 2, item: "/imgs/go-restaurant-home.png" },
-      { id: 3, item: "/imgs/go-restaurant-home.png" },
+      { id: 1, item: "/imgs/go-restaurant.png" },
+      { id: 2, item: "/imgs/go-restaurant.png" },
+      { id: 3, item: "/imgs/go-restaurant.png" },
     ],
     link: "https://github.com/mstarkRules/go-restaurant-classes-ts-extra-challenge",
     description:
@@ -28,11 +28,11 @@ export const PortfolioList = [
   {
     id: 3,
     title: "Aplicação Web Letmeask",
-    img: "/imgs/letmeask-screen.png",
+    img: "/imgs/letmeask.png",
     listImgs: [
-      { id: 1, item: "/imgs/letmeask-screen.png" },
-      { id: 2, item: "/imgs/letmeask-screen.png" },
-      { id: 3, item: "/imgs/letmeask-screen.png" },
+      { id: 1, item: "/imgs/letmeask.png" },
+      { id: 2, item: "/imgs/letmeask.png" },
+      { id: 3, item: "/imgs/letmeask.png" },
     ],
     link: "https://letmeask-8c2a3.web.app/",
     description:

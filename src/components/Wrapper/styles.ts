@@ -3,10 +3,14 @@ import styled from "styled-components";
 interface ContainerProps {
   fontSize?: string;
   padding?: boolean | string;
+  strong?: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
-  height: 100%;
+  height: auto;
+  width: auto;
+
+  font-weight: ${(props) => (props.strong === true ? "bold" : "none")};
   font-size: ${(props) => {
     switch (props.fontSize) {
       case "small":
@@ -52,6 +56,5 @@ export const Container = styled.div<ContainerProps>`
         return props.padding;
     }
   }};
-
   color: ${(props) => (props.color ? props.color : "#000")};
 `;

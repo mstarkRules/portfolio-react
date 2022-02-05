@@ -7,6 +7,7 @@ interface WrapperProps {
   fontSize?: string;
   padding?: boolean | string;
   color?: string;
+  strong?: boolean;
 }
 
 export const Wrapper = ({ children, ...props }: WrapperProps) => {
