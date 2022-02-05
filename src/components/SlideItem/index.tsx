@@ -15,10 +15,10 @@ interface ListImgsProps {
   item: string;
 }
 
-export function SlideItem({ listImgs }: SlideItemProps) {
+export function SlideItem({ listImgs, link }: SlideItemProps) {
   return (
-    <Container>
-      <img src={listImgs[2].item} alt="" />
+    <Container href={link} target="_blank">
+      <img src={listImgs[2].item} alt="image" title="Ir para o link" />
     </Container>
   );
 }
