@@ -24,7 +24,7 @@ export const Conteudo = styled.div`
   padding-right: 10px;
   padding-left: 10px;
 
-  @media (max-width: 580px) {
+  @media (max-width: 1140px) {
     justify-content: center;
   }
 
@@ -32,7 +32,7 @@ export const Conteudo = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 1140px) {
+  @media (max-width: 580px) {
     justify-content: center;
   }
 `;

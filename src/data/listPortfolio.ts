@@ -1,5 +1,32 @@
 export const PortfolioList = [
   {
+    id: 7,
+    title: "Módulo de Pagamentos",
+    img: "/imgs/payments.png",
+    listImgs: [
+      { id: 1, item: "/imgs/payments.png" },
+      { id: 2, item: "/imgs/payments.png" },
+      { id: 3, item: "/imgs/payments.png" },
+    ],
+    link: "https://github.com/mstarkRules",
+    description:
+      "Funcionalidade que integra uma aplicação ao sistema da GalaxPay, plataforma de pagamentos. O módulo implementado permite visualizar as faturas pagas e pendentes dos clientes cadastrados na aplicação, além de permitir a emissão dos boletos. Além disso a aplicação só permitia a visualização do conteúdo dessa tela caso o usuário que tentasse acessá-la preenchesse os requisitos estabelecidos pelo cliente, caso contrário, indicava uma tela de contatos para que ele se adequasse as regras de acesso.",
+  },
+
+  {
+    id: 3,
+    title: "Aplicação Web Letmeask",
+    img: "/imgs/letmeask.png",
+    listImgs: [
+      { id: 1, item: "/imgs/letmeask.png" },
+      { id: 2, item: "/imgs/letmeask.png" },
+      { id: 3, item: "/imgs/letmeask.png" },
+    ],
+    link: "https://letmeask-8c2a3.web.app/",
+    description:
+      "Aplicação Web que cria salas de perguntas pra produtores de conteúdo online. Projeto feito durante a trilha de ReactJS da NLW, evento da Rocketseat",
+  },
+  {
     id: 1,
     title: "Front-end Max Transportes",
     img: "/imgs/max-frontend-screen.png",
@@ -39,6 +66,19 @@ export const PortfolioList = [
       "Aplicação Web que cria salas de perguntas pra produtores de conteúdo online. Projeto feito durante a trilha de ReactJS da NLW, evento da Rocketseat",
   },
   {
+    id: 8,
+    title: "Módulo Agendador de Bloqueios",
+    img: "/imgs/payments.png",
+    listImgs: [
+      { id: 1, item: "/imgs/payments.png" },
+      { id: 2, item: "/imgs/payments.png" },
+      { id: 3, item: "/imgs/payments.png" },
+    ],
+    link: "https://github.com/mstarkRules",
+    description:
+      "Funcionalidade criada para permitir o agendamento de bloqueios e desbloqueios de rastreadores. A aplicação do cliente já possuía a funcionalidade de bloqueios/desbloqueios, mas não permitia agendamentos, ou a seleção de rastreadores para os comandos. Utilizando ReactJS, foi implementado todo o Frontend da nova funcionalidade, bem como a integração com o backend, feito por outro desenvolvedor. Essa integração envolveu toda a parte de autenticação e consumo das rotas CRUD.",
+  },
+  {
     id: 4,
     title: "Projeto Dt-Money - Ignite",
     img: "/imgs/dt-money-screen.png",
@@ -51,6 +91,7 @@ export const PortfolioList = [
     description:
       "Projeto Dt-Money, uma aplicação web para gerenciar entradas e saídas. Projeto feito seguindo a trilha de ReactJS, do Ignite.",
   },
+
   {
     id: 5,
     title: "Projeto Rocketshoes",
