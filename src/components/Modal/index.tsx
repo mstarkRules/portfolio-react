@@ -38,8 +38,8 @@ export function Modal(props: ModalProps) {
           background: "#f0f0f5",
           color: "#000",
           borderRadius: "8px",
-          maxWidth: "80rem",
-          //   maxHeight: "80rem",
+          maxWidth: "100%",
+          padding: 0,
           border: "none",
         },
         overlay: {
