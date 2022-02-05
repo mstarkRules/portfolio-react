@@ -6,7 +6,7 @@ import { SocialBar } from "../SocialBar";
 import { SocialItem } from "../SocialItem";
 import { Wrapper } from "../Wrapper";
 
-import { Container } from "./styles";
+import { Container, SlideFooter } from "./styles";
 
 interface SlideItemProps {
   listImgs: ListImgsProps[];
@@ -30,9 +30,15 @@ export function SlideItem({ listImgs, link, title }: SlideItemProps) {
         <img src={listImgs[2].item} alt="image" title="Ir para o link" />
       </Wrapper>
 
-      <Wrapper>
-        <SocialItem icon="BsGithub" size="medium" type="github" link={link} />
-      </Wrapper>
+      <SlideFooter>
+        <SocialItem
+          title="Ver no github"
+          icon="BsGithub"
+          size="medium"
+          type="github"
+          link={link}
+        />
+      </SlideFooter>
     </Container>
   );
 }

@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.a`
   width: 100%;
-  display: block;
-
+  height: auto;
   img {
     margin: 0;
     padding: 1rem;
@@ -16,4 +15,12 @@ export const Container = styled.a`
       padding: 0;
     }
   }
+`;
+export const SlideFooter = styled.footer`
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  height: 60px;
 `;
