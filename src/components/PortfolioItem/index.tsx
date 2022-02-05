@@ -1,23 +1,51 @@
 import { Container } from "./styles";
-import { memo } from "react";
+import { memo, useState } from "react";
+import Modal from "../Modal";
+import { SlideItem } from "../SlideItem";
 
 interface PortifolioItemProps {
   title: string;
   img: string;
   description: string;
   link: string;
+  listImgs: ListImgsProps[];
+  setIsOpen: () => void;
 }
 
-function PortfolioItem({ title, img, description, link }: PortifolioItemProps) {
-  console.log("imagem: ", img);
+interface ListImgsProps {
+  id: number;
+  item: string;
+}
+
+function PortfolioItem({
+  title,
+  img,
+  description,
+  link,
+  setIsOpen,
+  listImgs,
+}: PortifolioItemProps) {
+  const [modalOpen, setModalOpen] = useState(false);
+  function toggleModal() {
+    setModalOpen(!modalOpen);
+    console.log("abri o modal? ", modalOpen);
+  }
+  let count: number = 0;
+  count = count + 1;
+  console.log("imagem: ", count);
   return (
-    <Container img={img}>
-      <a href={link} target="_blank">
-        <div>
-          <strong>{title}</strong>{" "}
-        </div>
-      </a>
-    </Container>
+    <>
+      <Container img={img} onClick={toggleModal}>
+        <a>
+          <div>
+            <strong>{title}</strong>{" "}
+          </div>
+        </a>
+      </Container>
+      <Modal isOpen={modalOpen} setIsOpen={toggleModal}>
+        <SlideItem listImgs={listImgs} link={link} title={title} />
+      </Modal>
+    </>
   );
 }
 

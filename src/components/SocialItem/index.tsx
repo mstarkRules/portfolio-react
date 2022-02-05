@@ -7,13 +7,14 @@ interface SocialItemProps {
   icon: "BsLinkedin" | "BsWhatsapp" | "BsGithub";
   type: "linkedin" | "whatsapp" | "github";
   link: string;
-  size: "medium" | "large";
+  size: "medium" | "large" | "small";
+  title?: string;
 }
 
-export function SocialItem({ icon, type, link, size }: SocialItemProps) {
+export function SocialItem({ icon, type, link, size, title }: SocialItemProps) {
   return (
     <>
-      <Container type={type} size={size}>
+      <Container type={type} size={size} title={title}>
         <a href={link} target="_blank">
           <h1>
             {icon === "BsLinkedin" && <BsLinkedin />}

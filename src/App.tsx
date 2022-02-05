@@ -7,7 +7,6 @@ import { AnimateProvider } from "./contexts/AnimateContext";
 import { PerfilSection } from "./components/PerfilSection";
 import { Footer } from "./components/Footer";
 import { HomeContainer } from "./components/HomeContainer";
-import { ReactNode } from "react";
 
 export function App() {
   return (
