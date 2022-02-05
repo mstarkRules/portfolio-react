@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.a`
   width: 100%;
+  display: block;
+  h2 {
+    color: black;
+  }
 
   img {
     margin: 0;
