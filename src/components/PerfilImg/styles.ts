@@ -9,6 +9,7 @@ export const Container = styled.div`
     border: 0.3rem solid var(--background);
 
     transition: all ease 0.3s;
+
     :hover {
       transform: scale(1.1);
     }
