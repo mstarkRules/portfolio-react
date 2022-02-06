@@ -5,9 +5,12 @@ export const Container = styled.div`
   max-width: 17rem;
 
   img {
-    border-radius: 8.5rem;
+    border-radius: 8rem;
     border: 0.3rem solid var(--background);
+    width: 16rem;
+    height: 16rem;
 
+    object-fit: cover;
     transition: all ease 0.3s;
 
     :hover {
