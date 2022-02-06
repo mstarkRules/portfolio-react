@@ -10,6 +10,7 @@ export const Container = styled.section`
 
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
+  border-bottom-right-radius: -50px;
 
   h1 {
     padding: 30px;
@@ -30,6 +31,7 @@ export const Conteudo = styled.div`
 
   padding-right: 10px;
   padding-left: 10px;
+  /* padding-bottom: 2rem; */
 
   @media (max-width: 1140px) {
     justify-content: center;

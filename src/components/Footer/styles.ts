@@ -6,7 +6,19 @@ export const Container = styled.footer`
   justify-content: center;
   align-items: center;
 
-  p {
+  /* background-color: blue; */
+  border-top-right-radius: 100px;
+  margin-top: -3rem;
+
+  padding: 1.5rem;
+
+  /* transform: skewY(-3deg*/
+  /* p {
     padding-bottom: 10px;
+  } */
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 `;
