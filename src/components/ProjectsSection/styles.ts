@@ -5,18 +5,22 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background-color: #4d4762;
   padding-bottom: 100px;
+
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 
   h1 {
     padding: 30px;
+    color: white;
   }
 `;
 
 export const Conteudo = styled.div`
   max-width: 100%;
-  /* background-color: var(--background-dark);
-  padding: 2rem; */
+  background-color: #4d4762;
+  /* padding: 2rem; */
   gap: 2rem;
   display: flex;
   /* justify-content: space-between; */
