@@ -5,26 +5,35 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background-color: #4d4762;
   padding-bottom: 100px;
+
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: -50px;
 
   h1 {
     padding: 30px;
+    color: white;
   }
 `;
 
 export const Conteudo = styled.div`
-  max-width: 1140px;
-
+  max-width: 100%;
+  background-color: #4d4762;
+  /* padding: 2rem; */
   gap: 2rem;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+
   padding-right: 10px;
   padding-left: 10px;
+  /* padding-bottom: 2rem; */
 
-  @media (max-width: 580px) {
+  @media (max-width: 1140px) {
     justify-content: center;
   }
 
@@ -32,7 +41,7 @@ export const Conteudo = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 1140px) {
+  @media (max-width: 580px) {
     justify-content: center;
   }
 `;

@@ -21,11 +21,10 @@ interface ListImgsProps {
 
 export function SlideItem({ listImgs, link, title }: SlideItemProps) {
   return (
-    <Container href={link} target="_blank">
+    <Container>
       <Wrapper fontSize="big" strong padding>
         {title}
       </Wrapper>
-
       <Wrapper>
         <img src={listImgs[2].item} alt="image" title="Ir para o link" />
       </Wrapper>
