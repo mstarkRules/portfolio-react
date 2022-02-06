@@ -1,4 +1,4 @@
-import perfil from "../../assets/perfil.png";
+import perfil from "../../assets/mp.jpg";
 import { Container } from "./styles";
 
 export function PerfilImg() {

@@ -9,8 +9,8 @@ export const Container = styled.footer`
   /* background-color: blue; */
   border-top-right-radius: 100px;
   margin-top: -3rem;
-
-  padding: 1.5rem;
+  line-height: 1.8rem;
+  padding: 1rem;
 
   /* transform: skewY(-3deg*/
   /* p {
