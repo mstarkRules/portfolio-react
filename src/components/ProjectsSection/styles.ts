@@ -14,13 +14,16 @@ export const Container = styled.section`
 `;
 
 export const Conteudo = styled.div`
-  max-width: 1140px;
-
+  max-width: 100%;
+  /* background-color: var(--background-dark);
+  padding: 2rem; */
   gap: 2rem;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+
   padding-right: 10px;
   padding-left: 10px;
 

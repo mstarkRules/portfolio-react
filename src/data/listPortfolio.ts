@@ -52,32 +52,7 @@ export const PortfolioList = [
     description:
       "Projeto feito em curso na trilha de ReactJS do Ignite. Aplicação web para adicionar novos pratos a um cardápio de restaurante",
   },
-  {
-    id: 3,
-    title: "Aplicação Web Letmeask",
-    img: "/imgs/letmeask.png",
-    listImgs: [
-      { id: 1, item: "/imgs/letmeask.png" },
-      { id: 2, item: "/imgs/letmeask.png" },
-      { id: 3, item: "/imgs/letmeask.png" },
-    ],
-    link: "https://letmeask-8c2a3.web.app/",
-    description:
-      "Aplicação Web que cria salas de perguntas pra produtores de conteúdo online. Projeto feito durante a trilha de ReactJS da NLW, evento da Rocketseat",
-  },
-  {
-    id: 8,
-    title: "Módulo Agendador de Bloqueios",
-    img: "/imgs/payments.png",
-    listImgs: [
-      { id: 1, item: "/imgs/payments.png" },
-      { id: 2, item: "/imgs/payments.png" },
-      { id: 3, item: "/imgs/payments.png" },
-    ],
-    link: "https://github.com/mstarkRules",
-    description:
-      "Funcionalidade criada para permitir o agendamento de bloqueios e desbloqueios de rastreadores. A aplicação do cliente já possuía a funcionalidade de bloqueios/desbloqueios, mas não permitia agendamentos, ou a seleção de rastreadores para os comandos. Utilizando ReactJS, foi implementado todo o Frontend da nova funcionalidade, bem como a integração com o backend, feito por outro desenvolvedor. Essa integração envolveu toda a parte de autenticação e consumo das rotas CRUD.",
-  },
+
   {
     id: 4,
     title: "Projeto Dt-Money - Ignite",
