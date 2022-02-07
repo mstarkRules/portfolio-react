@@ -29,7 +29,7 @@ export function ProjectsSection() {
   }
 
   return (
-    <Container>
+    <Container id="projects">
       <h1 onClick={handleAnimateText}>{projectText}</h1>
       <Conteudo>
         {lista.map((item) => {
