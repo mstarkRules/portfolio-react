@@ -5,6 +5,8 @@ import { useAnimate } from "../../hooks/useAnimate";
 import { useEffect, useState } from "react";
 import Modal from "../Modal";
 
+import AOS from "aos";
+
 export function ProjectsSection() {
   const [displayText, setDisplayText] = useState("Meus Projetos");
   const [modalOpen, setModalOpen] = useState(false);
