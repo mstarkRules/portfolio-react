@@ -7,12 +7,14 @@ import { AnimateProvider } from "./contexts/AnimateContext";
 import { PerfilSection } from "./components/PerfilSection";
 import { Footer } from "./components/Footer";
 import { HomeContainer } from "./components/HomeContainer";
+import HeaderFixed from "./components/HeaderFixed";
 
 export function App() {
   return (
     <ThemeContextProvider>
       <AnimateProvider>
         <>
+          <HeaderFixed />
           <div
             style={{
               height: "100vh",

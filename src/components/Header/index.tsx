@@ -9,7 +9,7 @@ export function Header() {
   // const { theme, toggleTheme } = useTheme();
   // console.log("temaa: ", theme);
   return (
-    <Container>
+    <Container id="home">
       <Content>
         <img src={wallpaper} alt="" />
         <PerfilImg />
