@@ -9,7 +9,14 @@ import { Footer } from "./components/Footer";
 import { HomeContainer } from "./components/HomeContainer";
 import HeaderFixed from "./components/HeaderFixed";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export function App() {
+  Aos.init({
+    // startEvent: "DOMContentLoaded",
+    once: true,
+  });
   return (
     <ThemeContextProvider>
       <AnimateProvider>

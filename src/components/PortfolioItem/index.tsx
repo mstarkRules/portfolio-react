@@ -35,7 +35,12 @@ function PortfolioItem({
   console.log("imagem: ", count);
   return (
     <>
-      <Container img={img} onClick={toggleModal}>
+      <Container
+        img={img}
+        onClick={toggleModal}
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <a>
           <div>
             <strong>{title}</strong>{" "}

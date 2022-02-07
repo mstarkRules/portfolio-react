@@ -39,7 +39,6 @@ export function Modal(props: ModalProps) {
           color: "#000",
           borderRadius: "8px",
           maxWidth: "100%",
-          maxHeight: "90%",
           padding: 0,
           border: "none",
         },
