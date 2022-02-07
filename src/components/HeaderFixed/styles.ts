@@ -24,4 +24,8 @@ export const Nav = styled.nav`
       }
     }
   }
+
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;

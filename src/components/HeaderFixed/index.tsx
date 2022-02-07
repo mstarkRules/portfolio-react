@@ -13,7 +13,7 @@ const HeaderFixed = () => {
           </Wrapper>
         </a>
       </li>
-      <li>
+      <li title="Em breve">
         <a href="#about">
           <Wrapper padding color="white">
             Sobre mim
@@ -24,13 +24,6 @@ const HeaderFixed = () => {
         <a href="#projects">
           <Wrapper padding color="white">
             Projetos
-          </Wrapper>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <Wrapper padding color="white">
-            Contato
           </Wrapper>
         </a>
       </li>

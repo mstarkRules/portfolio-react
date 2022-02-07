@@ -14,6 +14,7 @@ export function App() {
     <ThemeContextProvider>
       <AnimateProvider>
         <>
+          <HeaderFixed />
           <div
             style={{
               height: "100vh",
