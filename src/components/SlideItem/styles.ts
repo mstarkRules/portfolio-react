@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   height: auto;
   img {
     margin: 0;
     padding: 1rem;
     width: 100%;
-    max-height: 600px;
+    /* max-width: 90%; */
+    max-height: calc(100vh - 13rem);
 
     object-fit: cover;
 
