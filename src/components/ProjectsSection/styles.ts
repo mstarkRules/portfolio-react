@@ -15,6 +15,12 @@ export const Container = styled.section`
   h1 {
     padding: 30px;
     color: white;
+    transition: all ease 0.1s;
+    @media (min-width: 980px) {
+      :hover {
+        transform: rotate(-1deg);
+      }
+    }
   }
 `;
 
