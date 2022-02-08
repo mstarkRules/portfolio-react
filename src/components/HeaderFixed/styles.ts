@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Nav = styled.nav`
+interface MenuProps {
+  isMenuOpen: boolean;
+}
+
+export const Nav = styled.nav<MenuProps>`
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
@@ -17,7 +21,6 @@ export const Nav = styled.nav`
 
       div {
         transition: all ease 0.5s;
-        /* height: calc(100% - 10px); */
         :hover {
           filter: opacity(0.5);
           border-bottom: 3px solid rgba(0, 0, 0, 0.5);
@@ -26,19 +29,34 @@ export const Nav = styled.nav`
         }
       }
     }
-
-    @media (max-width: 720px) {
-      display: none;
-    }
+  }
+  @media (max-width: 720px) {
+    display: none;
   }
 `;
 
-export const HamburguerArea = styled.span`
+export const HamburguerArea = styled.span<MenuProps>`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: ${(props) => (props.isMenuOpen ? "auto" : "60px")};
+
+  list-style: none;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  div {
+    li {
+      display: ${(props) => (props.isMenuOpen ? "flex" : "none")};
+    }
+  }
 
   @media (min-width: 720px) {
     display: none;
