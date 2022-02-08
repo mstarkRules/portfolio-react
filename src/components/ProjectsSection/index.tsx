@@ -4,6 +4,7 @@ import { PortfolioList } from "../../data/listPortfolio";
 import { useAnimate } from "../../hooks/useAnimate";
 import { useEffect, useState } from "react";
 import Modal from "../Modal";
+import { Wrapper } from "../Wrapper";
 
 export function ProjectsSection() {
   const [displayText, setDisplayText] = useState("Meus Projetos");
@@ -30,9 +31,10 @@ export function ProjectsSection() {
 
   return (
     <Container id="projects">
-      <h1 data-aos="zoom-in" onClick={handleAnimateText}>
-        {projectText}
-      </h1>
+      <Wrapper data-aos="zoom-in">
+        <h1 onClick={handleAnimateText}>{projectText}</h1>
+      </Wrapper>
+
       <Conteudo>
         {lista.map((item) => {
           return (
