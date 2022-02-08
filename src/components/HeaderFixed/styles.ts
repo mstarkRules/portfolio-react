@@ -11,7 +11,7 @@ export const Nav = styled.nav<MenuProps>`
   width: 100%;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  z-index: 10;
   position: fixed;
 
   div {
@@ -41,7 +41,7 @@ export const HamburguerArea = styled.span<MenuProps>`
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  z-index: 100;
+  z-index: 11;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: ${(props) => (props.isMenuOpen ? "auto" : "60px")};
