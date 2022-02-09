@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   border-top: thin solid rgba(0, 0, 0, 0.1);
-  /* -webkit-box-shadow: 15px -10px 3px #000; */
-  /* -moz-box-shadow: 15px -10px 3px #000; */
 
-  /* border-top: 0.2px solid rgba(0, 0, 0, 0.4); */
   display: flex;
   justify-content: center;
   align-items: center;
