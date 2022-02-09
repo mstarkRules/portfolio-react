@@ -7,6 +7,7 @@ export const Container = styled.section`
   flex-direction: column;
   background-color: #4d4762;
   padding-bottom: 100px;
+  padding-top: 40px;
 
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -27,17 +28,14 @@ export const Container = styled.section`
 export const Conteudo = styled.div`
   max-width: 100%;
   background-color: #4d4762;
-  /* padding: 2rem; */
   gap: 2rem;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
   padding-right: 10px;
   padding-left: 10px;
-  /* padding-bottom: 2rem; */
 
   @media (max-width: 1140px) {
     justify-content: center;
