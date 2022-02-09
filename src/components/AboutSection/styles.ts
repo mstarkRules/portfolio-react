@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  border-top: thin solid rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 15px -10px 3px #000; */
+  /* -moz-box-shadow: 15px -10px 3px #000; */
+
+  /* border-top: 0.2px solid rgba(0, 0, 0, 0.4); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,20 +64,24 @@ export const AboutImageBox = styled.div`
     0%,
     50%,
     100% {
-      transform: rotate(0);
+      transform: translateY(0);
     }
     25% {
-      transform: rotate(-3deg);
+      transform: translateY(10px);
     }
     75% {
-      transform: rotate(3deg);
+      transform: translateY(-10px);
     }
   }
+  transition: all ease 0.8s;
 
   img {
     width: 300px;
     height: 300px;
     border-radius: 150px;
     /* object-fit: cover; */
+    :hover {
+      transform: translateX(-1px);
+    }
   }
 `;
