@@ -10,13 +10,20 @@ const AboutSection = () => {
   return (
     <Container id="about">
       <Content>
-        <Wrapper data-aos="zoom-in">
-          <h1>Sobre Mim</h1>
+        <Wrapper>
+          <Wrapper data-aos="zoom-in">
+            <h1>Sobre Mim</h1>
+          </Wrapper>
+
           <AboutContent>
-            <AboutImageBox>
-              <img src={perfil} alt="" />
-            </AboutImageBox>
-            <p>{content.about}</p>
+            <Wrapper data-aos="fade-right">
+              <AboutImageBox>
+                <img src={perfil} alt="" />
+              </AboutImageBox>
+            </Wrapper>
+            <Wrapper data-aos="fade-left">
+              <p>{content.about}</p>
+            </Wrapper>
           </AboutContent>
         </Wrapper>
       </Content>
