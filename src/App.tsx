@@ -11,6 +11,7 @@ import HeaderFixed from "./components/HeaderFixed";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AboutSection from "./components/AboutSection";
 
 export function App() {
   Aos.init({
@@ -31,6 +32,8 @@ export function App() {
             <Header />
             <PerfilSection />
           </div>
+
+          <AboutSection />
 
           <ProjectsSection />
           <Footer />

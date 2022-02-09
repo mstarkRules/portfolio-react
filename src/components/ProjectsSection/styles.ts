@@ -7,7 +7,7 @@ export const Container = styled.section`
   flex-direction: column;
   background-color: #4d4762;
   padding-bottom: 100px;
-  padding-top: 60px;
+  padding-top: 40px;
 
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
