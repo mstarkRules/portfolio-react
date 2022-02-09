@@ -3,8 +3,10 @@ import { Container } from "./styles";
 
 export function PerfilImg() {
   return (
-    <Container>
-      <img src={perfil} alt="" />
-    </Container>
+    <a href="#about">
+      <Container>
+        <img src={perfil} alt="" />
+      </Container>
+    </a>
   );
 }
