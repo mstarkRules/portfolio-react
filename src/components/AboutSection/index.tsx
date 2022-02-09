@@ -15,13 +15,13 @@ const AboutSection = () => {
             <h1>Sobre Mim</h1>
           </Wrapper>
 
-          <AboutContent>
-            <Wrapper data-aos="fade-right">
+          <AboutContent data-aos="fade-right">
+            <Wrapper>
               <AboutImageBox>
                 <img src={perfil} alt="" />
               </AboutImageBox>
             </Wrapper>
-            <Wrapper data-aos="fade-left">
+            <Wrapper>
               <p>{content.about}</p>
             </Wrapper>
           </AboutContent>

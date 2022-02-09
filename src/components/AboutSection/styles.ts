@@ -9,7 +9,7 @@ export const Container = styled.section`
 
   padding-top: 60px;
 
-  @media (min-width: 960px) {
+  @media (min-width: 480px) {
     height: 100vh;
   }
 `;
