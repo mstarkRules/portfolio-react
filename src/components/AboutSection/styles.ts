@@ -52,8 +52,26 @@ export const AboutImageBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: floating-text 7s linear infinite;
+  @keyframes floating-text {
+    0%,
+    50%,
+    100% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-3deg);
+    }
+    75% {
+      transform: rotate(3deg);
+    }
+  }
+
   img {
-    width: 250px;
-    border-radius: 125px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    /* object-fit: cover; */
   }
 `;

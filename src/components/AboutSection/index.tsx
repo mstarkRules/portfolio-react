@@ -1,6 +1,6 @@
 import React from "react";
 import { content } from "../../data/content";
-import perfil from "../../assets/perfil.png";
+import perfil from "../../assets/baloon.svg";
 
 import { Wrapper } from "../Wrapper";
 
