@@ -7,11 +7,12 @@ export const Container = styled.section`
 
   padding-top: 60px;
 
-  /* background-color: blue; */
+  @media (min-width: 960px) {
+    height: 100vh;
+  }
 `;
 
 export const Content = styled.div`
-  /* background-color: blue; */
   display: flex;
 
   max-width: 1140px;
