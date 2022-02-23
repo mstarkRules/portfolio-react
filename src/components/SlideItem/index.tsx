@@ -36,12 +36,14 @@ export function SlideItem({ listImgs, link, title }: SlideItemProps) {
 
   function moveRight() {
     let x = scrollX - Math.round(window.innerWidth / 2);
-    let listW = 900 * 3;
+    let listW = 1030 * 3;
 
     if (window.innerWidth - listW > x) {
-      x = window.innerWidth - listW - 200;
+      x = window.innerWidth - listW;
     }
+
     setScrollX(x);
+    console.log("tamanho da teka: ", window.innerWidth);
   }
   return (
     <Container>
@@ -50,11 +52,35 @@ export function SlideItem({ listImgs, link, title }: SlideItemProps) {
       </Wrapper>
       <ImgList>
         <ul>
-          <li>
-            <div>
-              <img src={listImgs[2].item} alt="image" title="Ir para o link" />
-            </div>
-          </li>
+          <div>
+            <li style={{ transform: `translateX(${scrollX}px)` }}>
+              <div>
+                <img
+                  src={listImgs[2].item}
+                  alt="image"
+                  title="Ir para o link"
+                />
+              </div>
+            </li>
+            <li style={{ transform: `translateX(${scrollX}px)` }}>
+              <div>
+                <img
+                  src={listImgs[2].item}
+                  alt="image"
+                  title="Ir para o link"
+                />
+              </div>
+            </li>
+            <li style={{ transform: `translateX(${scrollX}px)` }}>
+              <div>
+                <img
+                  src={listImgs[2].item}
+                  alt="image"
+                  title="Ir para o link"
+                />
+              </div>
+            </li>
+          </div>
         </ul>
 
         <Arrow>

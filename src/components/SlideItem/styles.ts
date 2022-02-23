@@ -7,10 +7,23 @@ export const Container = styled.div`
 export const ImgList = styled.div`
   ul {
     list-style: none;
+    div {
+      display: flex;
+      width: 100vh;
+      height: auto;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      transition: all ease 0.5s;
+      li {
+        transition: all ease 0.5s;
+      }
+    }
 
     img {
+      transition: all ease 0.5s;
       margin: 0;
       padding: 1rem;
+      /* width: 100%; */
       width: 100%;
 
       max-height: calc(100vh - 13rem);
