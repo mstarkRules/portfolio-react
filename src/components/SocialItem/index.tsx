@@ -1,11 +1,11 @@
 import { Container } from "./styles";
 
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsTelephone } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 interface SocialItemProps {
-  icon: "BsLinkedin" | "BsWhatsapp" | "BsGithub";
-  type: "linkedin" | "whatsapp" | "github";
+  icon: "BsLinkedin" | "BsWhatsapp" | "BsGithub" | "BsTelephone";
+  type: "linkedin" | "whatsapp" | "github" | "phone";
   link: string;
   size: "medium" | "large" | "small";
   title?: string;
@@ -20,6 +20,7 @@ export function SocialItem({ icon, type, link, size, title }: SocialItemProps) {
             {icon === "BsLinkedin" && <BsLinkedin />}
             {icon == "BsWhatsapp" && <BsWhatsapp />}
             {icon == "BsGithub" && <BsGithub />}
+            {icon == "BsTelephone" && <BsTelephone />}
           </h1>
         </a>
       </Container>
