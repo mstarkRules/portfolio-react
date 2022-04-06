@@ -43,7 +43,7 @@ export function SlideItem({ listImgs, link, title }: SlideItemProps) {
     }
 
     setScrollX(x);
-    console.log("tamanho da teka: ", window.innerWidth);
+    console.log("tamanho da tela: ", window.innerWidth);
   }
   return (
     <Container>
