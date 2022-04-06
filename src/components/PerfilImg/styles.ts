@@ -17,4 +17,20 @@ export const Container = styled.div`
       transform: scale(1.1);
     }
   }
+
+  animation: floating-text 7s linear infinite;
+  @keyframes floating-text {
+    0%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+  }
+  transition: all ease 0.8s;
 `;
