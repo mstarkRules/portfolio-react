@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   border-top: thin solid rgba(0, 0, 0, 0.1);
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   padding-top: 60px;
+  margin-bottom: 70px;
 
   @media (min-width: 480px) {
     height: 100vh;
@@ -22,7 +22,7 @@ export const Content = styled.div`
   padding: 1rem;
 
   @media (max-width: 1200px) {
-    max-width: 720px;
+    /* max-width: 720px; */
   }
 `;
 
@@ -45,6 +45,7 @@ export const AboutContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin-left: 2rem; */
     p {
       margin: 0;
     }
