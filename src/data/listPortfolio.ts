@@ -3,7 +3,10 @@ export const PortfolioList = [
     id: 7,
     title: "Módulo de Pagamentos",
     img: "/imgs/payments.png",
-    listImgs: [{ id: 1, item: "/imgs/payments.png" }],
+    listImgs: [
+      { id: 1, item: "/imgs/payments.png" },
+      { id: 1, item: "/imgs/payments-2.webp" },
+    ],
     listVideos: [],
     link: "https://github.com/mstarkRules",
     description:
@@ -21,6 +24,18 @@ export const PortfolioList = [
       "Aplicação Web que cria salas de perguntas pra produtores de conteúdo online. Projeto feito durante a trilha de ReactJS da NLW, evento da Rocketseat",
   },
   {
+    id: 2,
+    title: "Museu Virtual Laurimar Leal",
+    img: "/imgs/mv-amazonia.webp",
+    listImgs: [
+      { id: 1, item: "/imgs/mv-amazonia.webp" },
+      { id: 1, item: "/imgs/mv-amazonia-2.webp" },
+    ],
+    listVideos: [],
+    link: "https://museuvirtualdaamazonia.com.br/",
+    description: "Acervo virtual de obras do artista amazônico Laurimar Leal.",
+  },
+  {
     id: 1,
     title: "Front-end Max Transportes",
     img: "/imgs/max-frontend-screen.png",
@@ -31,14 +46,17 @@ export const PortfolioList = [
       "Frontend inicial do Max App, uma aplicação de entrega, feita com ReactJS.",
   },
   {
-    id: 2,
-    title: "Projeto Go-restaurant - Ignite",
-    img: "/imgs/go-restaurant.png",
-    listImgs: [{ id: 1, item: "/imgs/go-restaurant.png" }],
+    id: 8,
+    title: "Módulo Agendador de Bloqueios",
+    img: "/imgs/lockout-scheduler.png",
+    listImgs: [
+      { id: 1, item: "/imgs/lockout-scheduler.png" },
+      { id: 1, item: "/imgs/lockout-scheduler-2.png" },
+    ],
     listVideos: [],
-    link: "https://github.com/mstarkRules/go-restaurant-classes-ts-extra-challenge",
+    link: "https://github.com/mstarkRules",
     description:
-      "Projeto feito em curso na trilha de ReactJS do Ignite. Aplicação web para adicionar novos pratos a um cardápio de restaurante",
+      "Funcionalidade que permite agendar comandos de bloqueios/desbloqueios para múltiplos rastreadores de frotas de veículos.",
   },
 
   {
@@ -51,6 +69,18 @@ export const PortfolioList = [
     description:
       "Projeto Dt-Money, uma aplicação web para gerenciar entradas e saídas. Projeto feito seguindo a trilha de ReactJS, do Ignite.",
   },
+  {
+    id: 9,
+    title: "Landing Page World Engenharia",
+    img: "/imgs/w-engenharia.png",
+    listImgs: [
+      { id: 1, item: "/imgs/w-engenharia.png" },
+      { id: 1, item: "/imgs/w-engenharia-2.png" },
+    ],
+    listVideos: [],
+    link: "https://worldengenharia.com.br/",
+    description: "Landing Page de uma empresa de engenharia elétrica.",
+  },
 
   {
     id: 5,
@@ -62,6 +92,7 @@ export const PortfolioList = [
     description:
       "Projeto de uma listagem de itens de uma loja de sapatos. Permite inserir e remover itens do carrinho. Projeto feito seguindo a trilha de ReactJS, do Ignite.",
   },
+
   {
     id: 6,
     title: "Aplicativo Móvel Meus Trabalhos",
