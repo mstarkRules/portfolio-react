@@ -9,10 +9,15 @@ interface PortifolioItemProps {
   description: string;
   link: string;
   listImgs: ListImgsProps[];
+  listVideos?: ListVideoProps[];
   setIsOpen: () => void;
 }
 
 interface ListImgsProps {
+  id: number;
+  item: string;
+}
+interface ListVideoProps {
   id: number;
   item: string;
 }
@@ -24,6 +29,7 @@ function PortfolioItem({
   link,
   setIsOpen,
   listImgs,
+  listVideos,
 }: PortifolioItemProps) {
   const [modalOpen, setModalOpen] = useState(false);
   function toggleModal() {
@@ -48,7 +54,12 @@ function PortfolioItem({
         </a>
       </Container>
       <Modal isOpen={modalOpen} setIsOpen={toggleModal}>
-        <SlideItem listImgs={listImgs} link={link} title={title} />
+        <SlideItem
+          listImgs={listImgs}
+          listVideos={listVideos}
+          link={link}
+          title={title}
+        />
       </Modal>
     </>
   );

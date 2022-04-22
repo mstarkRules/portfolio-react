@@ -46,6 +46,7 @@ export function ProjectsSection() {
               link={item.link}
               setIsOpen={toggleModal}
               listImgs={item.listImgs}
+              listVideos={item.listVideos}
             />
           );
         })}
