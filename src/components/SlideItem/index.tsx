@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 
 import { PortfolioList } from "../../data/listPortfolio";
 import { Footer } from "../Footer";
@@ -14,6 +16,7 @@ import perfil from "../../assets/mp.jpg";
 
 interface SlideItemProps {
   listImgs: ListImgsProps[];
+  listVideos?: ListVideosProps[];
   link: string;
   title: string;
 }
@@ -23,74 +26,51 @@ interface ListImgsProps {
   item: string;
 }
 
-export function SlideItem({ listImgs, link, title }: SlideItemProps) {
-  const [scrollX, setScrollX] = useState(50);
+interface ListVideosProps {
+  id: number;
+  item: string;
+}
 
-  function moveLeft() {
-    let x = scrollX + Math.round(window.innerWidth / 2);
-    if (x > 0) {
-      x = 0;
-    }
-    setScrollX(x);
-  }
-
-  function moveRight() {
-    let x = scrollX - Math.round(window.innerWidth / 2);
-    let listW = 1030 * 3;
-
-    if (window.innerWidth - listW > x) {
-      x = window.innerWidth - listW;
-    }
-
-    setScrollX(x);
-    console.log("tamanho da tela: ", window.innerWidth);
-  }
+export function SlideItem({
+  listImgs,
+  listVideos,
+  link,
+  title,
+}: SlideItemProps) {
   return (
     <Container>
       <Wrapper fontSize="big" strong padding>
         {title}
       </Wrapper>
       <ImgList>
-        <ul>
-          <div>
-            <li style={{ transform: `translateX(${scrollX}px)` }}>
-              <div>
-                <img
-                  src={listImgs[2].item}
-                  alt="image"
-                  title="Ir para o link"
+        <Splide
+          aria-label="Carousel"
+          options={{
+            width: 900,
+          }}
+        >
+          {listImgs.map((item) => {
+            return (
+              <SplideSlide>
+                <img src={item.item} loading="lazy" />
+              </SplideSlide>
+            );
+          })}
+          {listVideos?.map((item) => {
+            return (
+              <SplideSlide>
+                <video
+                  src={item.item}
+                  autoPlay
+                  loop
+                  controls
+                  muted
+                  style={{ width: "100%" }}
                 />
-              </div>
-            </li>
-            <li style={{ transform: `translateX(${scrollX}px)` }}>
-              <div>
-                <img
-                  src={listImgs[2].item}
-                  alt="image"
-                  title="Ir para o link"
-                />
-              </div>
-            </li>
-            <li style={{ transform: `translateX(${scrollX}px)` }}>
-              <div>
-                <img
-                  src={listImgs[2].item}
-                  alt="image"
-                  title="Ir para o link"
-                />
-              </div>
-            </li>
-          </div>
-        </ul>
-
-        <Arrow>
-          <div onClick={moveLeft}>
-            <BiLeftArrow />
-          </div>
-          <div onClick={moveRight}>
-            <BiRightArrow />
-          </div>
-        </Arrow>
+              </SplideSlide>
+            );
+          })}
+        </Splide>
       </ImgList>
 
       <SlideFooter>

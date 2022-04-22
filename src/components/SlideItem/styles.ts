@@ -9,7 +9,7 @@ export const ImgList = styled.div`
     list-style: none;
     div {
       display: flex;
-      width: 100vh;
+      /* width: 100vh; */
       height: auto;
       box-sizing: border-box;
       overflow-x: hidden;

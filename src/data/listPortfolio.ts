@@ -5,8 +5,11 @@ export const PortfolioList = [
     img: "/imgs/payments.png",
     listImgs: [
       { id: 1, item: "/imgs/payments.png" },
-      { id: 2, item: "/imgs/payments.png" },
-      { id: 3, item: "/imgs/payments.png" },
+      { id: 2, item: "/imgs/letmeask.png" },
+    ],
+    listVideos: [
+      { id: 3, item: "/videos/video-teste.mp4" },
+      { id: 3, item: "/videos/video-teste.mp4" },
     ],
     link: "https://github.com/mstarkRules",
     description:
