@@ -18,6 +18,7 @@ export function App() {
     // startEvent: "DOMContentLoaded",
     once: true,
   });
+
   return (
     <ThemeContextProvider>
       <AnimateProvider>

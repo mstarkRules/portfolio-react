@@ -11,7 +11,11 @@ export function Header() {
   return (
     <Container id="home">
       <Content>
-        <img src={wallpaper} alt="" />
+        <img
+          loading="lazy"
+          src={wallpaper}
+          alt="Imagem de capa do site. Poster do filme Interestelar. O astronauta, Cooper, sozinho com uma geleira interplanetária de fundo."
+        />
         <PerfilImg />
       </Content>
     </Container>

@@ -1,6 +1,6 @@
 import React from "react";
 import { content } from "../../data/content";
-import perfil from "../../assets/baloon.svg";
+import about from "../../assets/baloon.svg";
 
 import { Wrapper } from "../Wrapper";
 
@@ -18,7 +18,11 @@ const AboutSection = () => {
           <AboutContent>
             <Wrapper>
               <AboutImageBox>
-                <img src={perfil} alt="" />
+                <img
+                  src={about}
+                  alt="Imagem de um balão flutuando"
+                  loading="lazy"
+                />
               </AboutImageBox>
             </Wrapper>
             <Wrapper>
