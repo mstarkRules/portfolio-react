@@ -32,7 +32,7 @@ export const PortfolioList = [
       { id: 1, item: "/imgs/mv-amazonia-2.webp" },
     ],
     listVideos: [],
-    link: "https://museuvirtualdaamazonia.com.br/",
+    link: "https://museudaamazonialaurimarleal.com",
     description: "Acervo virtual de obras do artista amazônico Laurimar Leal.",
   },
   {

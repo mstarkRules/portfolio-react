@@ -9,7 +9,7 @@ export function Footer() {
       </Wrapper>
 
       <p>
-        In development by <strong>Marcos Paulo</strong> - 2022
+        In development by <strong>Marcos Paulo</strong> - 2023
       </p>
     </Container>
   );
