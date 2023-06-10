@@ -5,8 +5,9 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 10px;
-  padding-top: 10px;
+  /* padding-bottom: 10px;
+  padding-top: 10px; */
+  padding: 10px 10px 10px 10px;
   h1 {
     text-align: center;
   }
