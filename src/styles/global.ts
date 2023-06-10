@@ -21,7 +21,8 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
     body, button{
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: 'Roboto Mono', sans-serif;
         font-weight: 400;
     }
 
@@ -29,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 600;
     }
     a{
-       font-family: 'Poppins', sans-serif;
+       font-family: 'Roboto Mono', sans-serif;
        text-decoration: none;
     }
 

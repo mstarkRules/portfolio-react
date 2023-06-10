@@ -7,7 +7,7 @@ import Modal from "../Modal";
 import { Wrapper } from "../Wrapper";
 
 export function ProjectsSection() {
-  const [displayText, setDisplayText] = useState("Meus Projetos");
+  const [displayText, setDisplayText] = useState("Alguns Projetos");
   const [modalOpen, setModalOpen] = useState(false);
   const { animateText, projectText } = useAnimate();
 
