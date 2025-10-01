@@ -1,4 +1,3 @@
-import { SocialItem } from "../SocialItem";
 import { Container } from "./styles";
 import { ImLocation } from "react-icons/im";
 import { SocialBar } from "../SocialBar";
@@ -7,9 +6,9 @@ export function PerfilSection() {
   return (
     <Container>
       <h1>Marcos Paulo Amorim</h1>
-      <p>Desenvolvedor de Software - ReactJS | Python | AWS</p>
+      <p>Desenvolvedor de Software - ReactJS | Python | AWS | GCP</p>
       <strong>
-        <ImLocation /> São José dos Pinhais - PR
+        <ImLocation /> Curitiba - PR
       </strong>
       <WelcomeText />
       <SocialBar />
