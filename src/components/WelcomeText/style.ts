@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
   }
   transition: all ease 0.2s;
 
-  :hover {
+  &:hover {
     transform: scale(1.01);
   }
 `;

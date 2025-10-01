@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
     background-image: url(${(props) => props.img});
     background-size: cover;
 
-    :hover {
+    &:hover {
       transform: scale(1.05);
       color: #111;
     }

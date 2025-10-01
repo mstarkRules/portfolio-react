@@ -15,7 +15,7 @@ export const Button = styled.div<ButtonProps>`
 
   transition: all ease 0.2s;
 
-  :hover {
+  &:hover {
     transform: scale(1.2);
     cursor: pointer;
   }
