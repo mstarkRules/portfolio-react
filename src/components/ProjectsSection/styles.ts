@@ -18,7 +18,7 @@ export const Container = styled.section`
     color: white;
     transition: all ease 0.1s;
     @media (min-width: 980px) {
-      :hover {
+      &:hover {
         transform: rotate(-1deg);
       }
     }

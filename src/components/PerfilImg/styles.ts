@@ -13,7 +13,7 @@ export const Container = styled.div`
     object-fit: cover;
     transition: all ease 0.3s;
 
-    :hover {
+    &:hover {
       transform: scale(1.3);
     }
   }

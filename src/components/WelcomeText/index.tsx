@@ -3,7 +3,7 @@ import { useAnimate } from "../../hooks/useAnimate";
 import { useTheme } from "../../hooks/useTheme";
 import { Container } from "./style";
 
-const WelcomeText = (): JSX.Element => {
+const WelcomeText = () => {
   const [displayText, setDisplayText] = useState("Bem vind@ ao meu Portfólio");
 
   const { welComeText, readyClick, animateText, visibleColor } = useAnimate();

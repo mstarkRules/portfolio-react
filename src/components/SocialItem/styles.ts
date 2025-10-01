@@ -35,7 +35,7 @@ export const Container = styled.div<ContainerProps>`
     }};
     transition: all ease 0.2s;
 
-    :hover {
+    &:hover {
       color: ${(props) => props.type === "whatsapp" && "#34af23"};
       color: ${(props) => props.type === "linkedin" && "#007bb6"};
       color: ${(props) => props.type === "github" && "#111"};
