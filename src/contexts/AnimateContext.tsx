@@ -30,7 +30,7 @@ export const AnimateContext = createContext<AnimateContextData>(
 
 export function AnimateProvider({
   children,
-}: AnimateProviderProps): JSX.Element {
+}: AnimateProviderProps) {
   const [readyClick, setReadyClick] = useState(true);
 
   const [welComeText, setWelcomeText] = useState(String);

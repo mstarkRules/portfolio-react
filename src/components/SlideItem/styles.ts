@@ -46,7 +46,7 @@ export const Arrow = styled.div`
   opacity: 0.5;
 
   transition: all ease 0.3s;
-  :hover {
+  &:hover {
     /* cursor: pointer; */
     opacity: 0.5;
   }

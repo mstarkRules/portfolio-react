@@ -78,7 +78,7 @@ export const AboutImageBox = styled.div`
     height: 300px;
     border-radius: 150px;
     /* object-fit: cover; */
-    :hover {
+    &:hover {
       transform: translateX(-1px);
     }
   }

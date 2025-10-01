@@ -21,7 +21,7 @@ export const Nav = styled.nav<MenuProps>`
 
       div {
         transition: all ease 0.5s;
-        :hover {
+        &:hover {
           filter: opacity(0.5);
           border-bottom: 3px solid rgba(0, 0, 0, 0.5);
           border-collapse: separate;
@@ -48,7 +48,7 @@ export const HamburguerArea = styled.span<MenuProps>`
 
   list-style: none;
 
-  :hover {
+  &:hover {
     cursor: pointer;
   }
 
