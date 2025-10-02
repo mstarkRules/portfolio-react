@@ -23,7 +23,7 @@ export function SocialBar() {
         icon="BsWhatsapp"
         type="whatsapp"
         title="send message on WhatsApp"
-        link="https://wa.me/5593991653757"
+        link="https://wa.me/5541988993521"
       />
       <SocialItem
         size="medium"
